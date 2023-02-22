@@ -51,4 +51,18 @@ function fibo(num) {
     }
 
 
-}
+
+    function gender(){
+        var g=document.getElementById('gen').value;
+
+        if(g=="male"){
+            alert("it is a valid gender=male");
+        }
+        else if(g=="female"){
+            alert("it is valid gender=female");
+        }
+        else{
+            alert("invalid gender");
+        }
+    }
+
