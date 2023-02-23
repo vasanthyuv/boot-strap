@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <html lang="en">
 
 <head>
@@ -52,10 +53,78 @@
 
     <input type="button" onclick="fibo(num)" value="check for fibonacci series">
     <input type="button" onclick="factorial(num)" value="check for factorial"><br><br>
-    
+
 
     <input type="text" id="gen" placeholder="enter your gender">
     <input type="button" onclick="gender(gen)" value="check the gender">
+    <input type="button" onclick="switch1(gen)" value="check the gender in switch case">
+
+
+    <form name='fm' method="post" onsubmit="form()">
+        <fieldset>
+            <legend style=text-align:center;>
+                REGISTRATION FORM
+            </legend>
+
+            <label>user name</label>
+            <input type="text" name="uname" required placeholder="uname">
+            <br><br>
+
+            <label>user email</label>
+            <input tye="email" name="email" placeholder="email">
+            <br><br>
+
+
+
+            <label>pasword</label>
+            <input type="password" name="pass" placeholder="password">
+            <input type="checkbox" value="YES" NAME="pass"><label>REMEMBER password</label>
+            <br><br>
+
+
+
+            <label>gender</label>
+            <input type="radio" name="gender" value="MALE">MALE
+            <input type="radio" name="gender" value="FEMALE">FEMALE
+            <br><br>
+
+
+
+            <label>ADDRESS</label>
+            <textarea name="addre"></textarea>
+            <br><br>
+
+
+
+            <label>dob</label>
+            <input type="date" name="dob" placeholder="dob"><br><br>
+
+            <label>MOBILE NO</label>
+            <input type="number" nmae="num" pattern="[0-9]{10}" placeholder="mobile no">
+            <br><br>
+            <label>telephone num</label><br>
+            <input type="tel" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" placeholder="telephone num">
+            <br><br>
+            <label> SELECT PROFESSION</label>
+            <select id="prof" name="porfession">
+
+                <optgroup label="DEVELOPER">
+                    <option>front end developer</option>
+                    <option >back end developer</option>
+                    <option >cyber security analyst</option>
+                </optgroup>
+            </select>
+
+            <br><br>
+
+            <button type="submit">submit</button>
+
+
+
+
+        </fieldset>
+        <div>
+    </form>
 
 
 

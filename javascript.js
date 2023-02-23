@@ -49,20 +49,57 @@ function fibo(num) {
 
 
     }
+}
 
 
 
-    function gender(){
-        var g=document.getElementById('gen').value;
+function gender() {
+    var g = document.getElementById('gen').value;
 
-        if(g=="male"){
-            alert("it is a valid gender=male");
-        }
-        else if(g=="female"){
-            alert("it is valid gender=female");
-        }
-        else{
-            alert("invalid gender");
-        }
+    if (g == "male") {
+        alert("it is a valid gender=male");
     }
+    else if (g == "female") {
+        alert("it is valid gender=female");
+    }
+    else {
+        alert("invalid gender");
+    }
+}
+
+function switch1() {
+    var s = document.getElementById('gen').value;
+
+    switch (s) {
+        case "male":
+            alert("valid gender:male");
+            break;
+        case "female":
+            alert("valid gender female:female");
+            break;
+        default:
+            alert("invalid gender");
+    }
+}
+
+function form() {
+    var name = document.fm.uname.value;
+    var mail = document.fm.email.value;
+    var gen = document.fm.gender.value;
+    var address = document.fm.addre.value;
+    var dob = document.fm.dob.value;
+    var profession=document.fm.prof.value;
+
+
+
+    document.write("Name:" + name + "<br>");
+    document.write("mail id:" + mail + "<br>");
+    document.write("Gender:" + gen + "<br>");
+    document.write("Address:"+address+"<br>");
+    document.write("Date of Birth:"+dob+"<br>");
+    document.write("Profession:"+profession+"<br>");
+
+
+
+}
 
