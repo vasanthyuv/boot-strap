@@ -102,4 +102,35 @@ function form() {
 
 
 }
+var names=["vasanth","vikram","hari","vignesh","venkat","ranita","harita","yamini","hemanth"];
+function friends(){
+    
+    
+     var input=document.getElementById('name');
+   var  name=input.value;
+    names.push(name);
+    input.value="";
+    for(i=0;i<names.length;i++){
+    document.write(names[i]+"<br>");
+    }
+}
 
+function beg(){
+var input=document.getElementById('name');
+var end=input.value;
+names.unshift(end);
+input.value="";
+for(i=0;i<names.length;i++){
+    document.write(names[i]+"<br>");
+    }
+
+
+}
+
+function delbeg(){
+    var input=document.getElementById('name');
+    var dbeg =input.value;
+    names.shift(dbeg);
+    console.log(dbeg);
+    
+}
