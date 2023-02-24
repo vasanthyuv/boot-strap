@@ -1,3 +1,6 @@
+
+
+//form u and fuction calling//
 function perfect() {
     var n = document.getElementById('num').value;
     sum = 0;
@@ -99,31 +102,35 @@ function form() {
     document.write("Date of Birth:" + dob + "<br>");
     document.write("Profession:" + profession + "<br>");
 
-
+//array//
 
 }
-var names = ["vasanth", "vikram", "hari", "vignesh", "venkat", "hemanth","divya"];// 
+var names = ["vasanth", "vikram", "hari", "vignesh", "venkat", "hemanth", "divya"];
+
+function array() {
+    names;
+}
+
 function friends() {
 
-   
+
     var input = document.getElementById('name');
     var name = input.value;
     names.push(name);
     input.value = "";
-    alert(names+"<br>");
-   // for (i = 0; i < names.length; i++) {
-     //   document.write(names[i] + "<br>");
-    }
+    alert(names);
+
+}
 
 
 function beg() {
     var input = document.getElementById('name');
     var end = input.value;
     names.unshift(end);
-    input.value = "";
-    //for (i = 0; i < names.length; i++) {
-        alert(names[i] + "<br>");
-    }
+    //   input.value = "";
+
+    alert(names);
+}
 
 
 
@@ -132,46 +139,70 @@ function inbeg() {
     var input = document.getElementById('name');
     var ibeg = input.value;
     names.unshift(ibeg);
-   // document.write(names+"<br>");
 
-  //  console.log(dbeg);//
-   
-   // for (i = 0; i < names.length; i++) {
-        alert(names[i] + "<br>");
-    }
+    alert(names);
+}
 
 
 
-function dbeg(){
+function dbeg() {
     var input = document.getElementById('name');
     var df = input.value;
     names.shift(df);
-   // for (i = 0; i < names.length; i++) {
-        alert(names[i] + "<br>");
-    }
+
+    alert(names);
+}
 
 
-function dend(){
+function dend() {
     var input = document.getElementById('name');
-    var de=input.value;
+    var de = input.value;
     names.pop(de);
-  //  for (i = 0; i < names.length; i++) {
-        alert(names[i] + "<br>");
-    }
+
+    alert(names);
+}
 
 
 
-function sorting(){
+function sorting() {
     var input = document.getElementById('name');
-    var sor=input.value;
+    var sor = input.value;
     names.sort();
-   for (i = 0; i < names.length; i++) {
-        document.write(names[i] + "<br>");
+    for (i = 0; i < names.length; i++) {
+        alert(names);
     }
 }
 
 
-
-function foreach1(){
-    document.displaynames.forEach(names);
+function foreach1() {
+    names.forEach(function (name) {
+        alert(name);
+    });
 }
+
+function forof() {
+    for (var name of names) {
+        alert(name);
+    }
+
+}
+
+function forin() {
+    for (var name in names) {
+        alert(names[name]);
+    }
+
+}
+
+function date1() {
+    let date = new Date();
+    let day = date.getDate();
+    let month = date.getMonth() + 1;
+    let year = date.getFullYear();
+
+    alert(month+"/"+day+"/"+year);
+}
+
+
+//form validation//
+

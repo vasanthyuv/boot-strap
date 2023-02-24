@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #log1 {
+            display: inline-block;
+            margin-left: 500px;
+            margin-top: 100px;
+        }
+
+        #but {
+            margin-left: 100px;
+            margin: 40px;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script src="signup.js"></script>
+    <form name="log" name="log1" method="post">
+        Name: <input type="text" name="uname" ><br />
+        <br>
+        e-mail:<input type="email" name="mail" required>
+        <br>
+        Password: <input type="password" name="pass" ><br />
+        <br>
+        confirm password: <input type="password" name="cpass" >
+        <br>
+        <input id="but" type="submit"   action="" onsubmit="validation()"  value="Sign In">
+    </form>
+
+</body>
+
+</html>
