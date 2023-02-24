@@ -88,49 +88,90 @@ function form() {
     var gen = document.fm.gender.value;
     var address = document.fm.addre.value;
     var dob = document.fm.dob.value;
-    var profession=document.fm.prof.value;
+    var profession = document.fm.prof.value;
 
 
 
     document.write("Name:" + name + "<br>");
     document.write("mail id:" + mail + "<br>");
     document.write("Gender:" + gen + "<br>");
-    document.write("Address:"+address+"<br>");
-    document.write("Date of Birth:"+dob+"<br>");
-    document.write("Profession:"+profession+"<br>");
+    document.write("Address:" + address + "<br>");
+    document.write("Date of Birth:" + dob + "<br>");
+    document.write("Profession:" + profession + "<br>");
 
 
 
 }
-var names=["vasanth","vikram","hari","vignesh","venkat","ranita","harita","yamini","hemanth"];
-function friends(){
-    
-    
-     var input=document.getElementById('name');
-   var  name=input.value;
+var names = ["vasanth", "vikram", "hari", "vignesh", "venkat", "hemanth","divya"];// 
+function friends() {
+
+   
+    var input = document.getElementById('name');
+    var name = input.value;
     names.push(name);
-    input.value="";
-    for(i=0;i<names.length;i++){
-    document.write(names[i]+"<br>");
-    }
-}
-
-function beg(){
-var input=document.getElementById('name');
-var end=input.value;
-names.unshift(end);
-input.value="";
-for(i=0;i<names.length;i++){
-    document.write(names[i]+"<br>");
+    input.value = "";
+    alert(names+"<br>");
+   // for (i = 0; i < names.length; i++) {
+     //   document.write(names[i] + "<br>");
     }
 
 
+function beg() {
+    var input = document.getElementById('name');
+    var end = input.value;
+    names.unshift(end);
+    input.value = "";
+    //for (i = 0; i < names.length; i++) {
+        alert(names[i] + "<br>");
+    }
+
+
+
+
+function inbeg() {
+    var input = document.getElementById('name');
+    var ibeg = input.value;
+    names.unshift(ibeg);
+   // document.write(names+"<br>");
+
+  //  console.log(dbeg);//
+   
+   // for (i = 0; i < names.length; i++) {
+        alert(names[i] + "<br>");
+    }
+
+
+
+function dbeg(){
+    var input = document.getElementById('name');
+    var df = input.value;
+    names.shift(df);
+   // for (i = 0; i < names.length; i++) {
+        alert(names[i] + "<br>");
+    }
+
+
+function dend(){
+    var input = document.getElementById('name');
+    var de=input.value;
+    names.pop(de);
+  //  for (i = 0; i < names.length; i++) {
+        alert(names[i] + "<br>");
+    }
+
+
+
+function sorting(){
+    var input = document.getElementById('name');
+    var sor=input.value;
+    names.sort();
+   for (i = 0; i < names.length; i++) {
+        document.write(names[i] + "<br>");
+    }
 }
 
-function delbeg(){
-    var input=document.getElementById('name');
-    var dbeg =input.value;
-    names.shift(dbeg);
-    console.log(dbeg);
-    
+
+
+function foreach1(){
+    document.displaynames.forEach(names);
 }
