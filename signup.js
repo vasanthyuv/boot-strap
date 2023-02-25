@@ -41,19 +41,19 @@ function validation() {
     {
         alert ('Password not Matched');
     }
-    else if(document.getElementById("t5").value.length < 6)
+    else if(pwd.length < 8)
     {
-        alert ('Password minimum length is 6');
+        alert ('Password minimum length is 8');
     }
-    else if(document.getElementById("t5").value.length > 12)
+    else if(pwd.length > 15)
     {
-        alert ('Password max length is 12');
+        alert ('Password max length is 15');
     }
     else
     {                                           
            alert('Thank You for Registration & You are Redirecting to Website');
-           // Redirecting to other page or webste code through windows  //
-           window.location = "https://tutorial.eyehunts.com//"; 
+           
+           window. location = "http://127.0.0.1:5500/signinredirection.html"; 
     }
 
 
