@@ -66,17 +66,12 @@
 
 
 
-        #heading1 {
-            color: white;
-            
-            
+        #issue {
 
-            font-family: 'poppins';
-            font-weight: bolder;
 
             margin-top: 90px;
             margin-left: 150px;
-            font-size: 50px;
+
 
         }
 
@@ -84,13 +79,14 @@
             position: absolute;
             height: 400px;
             left: 800px;
-            top: 35px;
+            top: 49px;
         }
 
         #para1 {
             color: white;
-            margin-top: 130px;
-            margin-left: 182px;
+            margin-top: 250px;
+            margin-left: 195px;
+            font-family: 'poppins';
         }
 
         #contbut {
@@ -100,7 +96,7 @@
             border: 1px #0092ca solid;
             border-radius: 5px;
             left: 210px;
-            top: 400px;
+            top: 350px;
             width: 100px;
             height: 40px;
 
@@ -115,7 +111,7 @@
             border-radius: 5px;
             position: absolute;
             left: 330px;
-            top: 400px;
+            top: 350px;
         }
 
         #block1 {
@@ -138,12 +134,75 @@
             bottom: 90px;
 
         }
+
+        #heading1 {
+
+            color: white;
+
+
+            font-size: 50px;
+            font-family: 'poppins';
+            font-weight: bolder;
+            position: absolute;
+            top: 140px;
+            left: 160px;
+        }
+
+        #heading2 {
+            color: black;
+            font-size: 36px;
+            font-family: 'poppins';
+            font-weight: bolder;
+            position: absolute;
+            left: 167px;
+            top: 700px;
+
+        }
+
+        #paragraph2 {
+            font-family: 'poppins';
+            position: absolute;
+            left: 190px;
+            top: 830px
+        }
+
+        #servicebutton {
+            width: 100px;
+            height: 40px;
+            background-color: gold;
+            border: 1px gold solid;
+            border-radius: 5px;
+            color: white;
+            position: relative;
+            left: 203px;
+            top: 170px;
+
+
+        }
+
+        #yellowback {
+            position: relative;
+            left: 700px;
+            top: 200px;
+        }
+
+        #petimg {
+            position: relative;
+            left: 527px;
+            top: 95px;
+        }
+
+        #gradientimg {
+            position: relative;
+            left: 206px;
+            top: 95px;
+        }
     </style>
 
 </head>
 
 <body>
-
+    <!--navbar-->
 
     <nav id="nav" class="navbar navbar-expand-lg bg-light">
         <div style="background-color:#ffc93c;" class="container-fluid">
@@ -184,14 +243,13 @@
     <div class="block1">
 
         <div id="petblock1">
-            <pre id="heading1">
-                First I Wanted to be
-                a Veterinarian</pre>
+            <pre id="issue">
+               </pre>
 
-            
+            <!--dog image-->
 
             <img src="asset/dog.png" id="dog">
-
+            <!--paragraph-->
             <pre id="para1">
     Lorem Ipsum available but the majority have
     suffered alteration in some form,by injexting
@@ -200,13 +258,31 @@
 
 
 </pre>
+            <!--button-->
             <input type="button" value="contact us" id="contbut">
             <input type="button" value="our Service" id="servicebut">
         </div>
-    </div>
+    </div> <!-- main heading-->
+    <pre id="heading1">
+    First I wanted to be
+    a veterinarian
+</pre>
+
+    <div class="secondhalf">
+
+        <pre id="heading2">
+    As a veterinarian and  
+    lover of animals.
+</pre>
 
 
+        <pre id="paragraph2">
+    Lorem Ipsum available but the majoty
+    suffered alteration in some form,by
+    humour randomised words.
+</pre>
+        <input id="servicebutton" type="button" value="Our Service">
 
-</body>
-
-</html>
+        <img id="yellowback" src="asset/yellow background.png" height="140px" width="200px">
+        <img id="petimg" src="asset/Place Your Image Here.png" height="300px">
+        <img id="gradientimg" src="asset/vedio background.png" height="300px">
