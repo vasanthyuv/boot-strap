@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+
+        function person(name, age, gender, address) {
+            this.name = name;
+            this.age = age;
+            this.gender = gender;
+            this.address = address;
+
+        }
+
+
+
+        let emp1 = new person("vasanth", 20, "male", "27 coimbatore usa");
+
+
+
+        function display() {
+            document.getElementById("demo").innerHTML = ("name:" + emp1.name + ' ' + "age:" + emp1.age + ' ' + "gender:" + ' ' + emp1.gender + '' + "address:" + emp1.address);
+        }
+        display();
+
+    </script>
+
+
+    <script>
+
+        //new class using abstarct methos*/ 
+        <h1 id="demo1"></h1>
+        class Emp{
+            constructor(name, age, gender, address) {
+                this.name = name;
+                this.age = age;
+                this.gender = gender;
+                this.address = address;
+                if (this.constructor === Emp) {
+                    throw new Error("You can not create  an instance for the abstarct class.");
+                }
+
+            }
+            display() {
+                throw new Error("Abstract class doesn't have any implementation");
+            }
+
+
+        }
+        class Person extends Emp{
+
+
+
+            constructor(name, age, gender, address, empcode, department, designation, salary) {
+                super(name, age, gender, address);
+                this.empcode = empcode;
+                this.department = department;
+                this.designation = designation;
+                this.salary = salary;
+            }
+            
+
+             display() {
+                document.getElementById("demo1").innerHTML = ("name:" + pers.name + ' ' + "age:" + pers.age + ' ' + "gender:"+ pers.gender + '' + "address:" + pers.address + 'emdcode:' + pers.empcode + 'department:' + pers.department + 'designation:' + pers.designation + 'salary:' + pers.salary);
+            }
+
+        }
+        let pers = new Person('vasanth', 21, 'male', 'coimabtore india',123, 'bca', 'developer', 25000);
+        pers.display();
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
