@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        #home {
+            position: absolute;
+            left: 290px;
+            top: 6px;
+            color: white;
+        }
+
+        #about {
+            position: absolute;
+            left: 360px;
+            top: 6px;
+            color: white;
+        }
+
+        #service {
+            position: absolute;
+            left: 430px;
+            top: 6px;
+            color: white;
+        }
+
+        #contact {
+            position: absolute;
+            left: 517px;
+            top: 6px;
+            color: white;
+
+        }
+
+        #search {
+            border-color: white;
+
+            background-color: #ffc93c;
+            size: 1px;
+
+
+        }
+
+        #searchbox {
+            background-color: lightskyblue;
+        }
+
+        #logo {
+            position: absolute;
+            height: 22px;
+            left: 35px;
+            color: white;
+        }
+
+        body {
+
+            /*background-color: gold;*/
+        }
+
+        #head1 {
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-top: 90px;
+            margin-left: 150px;
+            font-size: 50px;
+        }
+
+        #dog {
+            position: absolute;
+            height: 500px;
+            left: 790px;
+            top: 100px;
+        }
+
+        #para1 {
+            color: white;
+            margin-top: 17px;
+            margin-left: 182px;
+        }
+
+        #contbut {
+            position: absolute;
+            color: white;
+            background-color: #0092ca;
+            border: 1px #0092ca solid;
+            border-radius: 5px;
+            left: 210px;
+            top: 400px;
+            width: 100px;
+            height: 40px;
+
+        }
+
+        #servicebut {
+            width: 100px;
+            height: 40px;
+            background-color: gold;
+            border: 2px white solid;
+            color: white;
+            border-radius: 5px;
+            position: absolute;
+            left: 330px;
+            top: 400px;
+        }
+
+       #block1{
+        background-color: gold;
+       }
+        body{
+            height: 4000px;
+           /* background-color: gold;*/
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div style="background-color:#ffc93c;" class="container-fluid">
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="about" href="#">About</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="#" id="service"> Service</a>
+
+
+
+                    <li class="nav-item">
+                        <a class="nav-link " id="contact" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <form class="d-flex" id="search" role="search">
+                <input class="form-control me-2" type="search" style="color: white;" id="search" placeholder="Search"
+                    aria-label="Search">
+                <button style=" color:white;" class="btn btn-outline-success" id="searchbox"
+                    type="submit">Search</button>
+            </form>
+        </div>
+        <img src="asset/bootlogo.png" id="logo">
+
+    </nav>
+
+    <div class="block1">
+
+
+        <pre id="head1" >
+     First I Wanted to be
+     a Veterinarian</pre>
+
+        </pre>
+
+        <img src="asset/dog.png" id="dog">
+
+        <pre id="para1">
+    Lorem Ipsum available but the majority have
+    suffered alteration in some form,by injexting
+    humour randomised words.
+
+
+
+</pre>
+        <input type="button" value="contact us" id="contbut">
+        <input type="button" value="our Service" id="servicebut">
+    </div>
+
+
+
+</body>
+
+</html>
