@@ -636,3 +636,13 @@ body {
 a {
     text-decoration: none;
 }
+#footertxtbox{
+    position: relative;
+    bottom: 172px;
+    height: 50px;
+    width:300px;
+    border: none;
+    background-color: goldenrod;
+    left: 187px;
+
+}
