@@ -661,5 +661,11 @@ body {
     right: 290px;
     top: 350px;
 }
-
+#blockeightpre{
+    position: relative;
+    color:black;
+    bottom: 840px;
+    left: 480px;
+    font-family: 'poppins';
+}
 
